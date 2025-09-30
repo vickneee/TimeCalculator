@@ -53,10 +53,19 @@ docker run -it --rm \
 
 If error use mvn clean:
 
-### 7. Run:
+clean → deletes the target/ folder
+
+```shell
+mvn clean javafx:run
+```
+
+or use:
+
 ```sh
  mvn javafx:run -Drecompile=true
 ```
+Skips the clean step → keeps the old target/ folder.
+
 ![TimeCalculator.png](TimeCalculator.png)
 
 On macOS, JavaFX GUIs are best run locally, not inside Docker.
