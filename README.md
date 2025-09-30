@@ -1,9 +1,15 @@
 # TimeCalculator JavaFX XQuartz Docker macOS
 
+On macOS, you can use XQuartz as the X11 server, and connect your Docker container to it.
+
 ### 1. Install XQuartz (if not installed):
 ```shell
 brew install --cask xquartz
 ```
+
+or download it from homepage:
+
+https://www.xquartz.org/
 
 ### 2. Open XQuartz App:
 In settings -> Security -> Allow connections from network clients
