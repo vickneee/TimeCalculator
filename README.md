@@ -40,7 +40,7 @@ This temporarily disables access control so Docker containers can connect.
 
 ### 6. Build Docker Image:
 ```shell
-docker build -t x11-apps . # Use correct name
+docker build -t timecalculator . # Use correct name
 ```
 
 ### 7. Run:
