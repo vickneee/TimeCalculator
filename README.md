@@ -88,6 +88,16 @@ docker build -t x11-apps . # Use correct name
 
 ### 7. Run:
 ```sh
- mvn clean javafx:run
+docker run -it --rm \
+    -e DISPLAY=host.docker.internal:0 \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    timecalculator # Use correct name
+```
+
+### 7. Run:
+```sh
+ mvn javafx:run -Drecompile=true
 ```
 ![TimeCalculator.png](TimeCalculator.png)
+
+On macOS, JavaFX GUIs are best run locally, not inside Docker.
