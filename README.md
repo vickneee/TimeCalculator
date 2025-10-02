@@ -67,13 +67,11 @@ or use:
 ```
 Skips the clean step → keeps the old target/ folder.
 
-![TimeCalculator.png](TimeCalculator.png)
-
-On macOS, JavaFX GUIs are best run locally, not inside Docker.
-
 ### Manifest:
 If manifest error check the manifest:
 ```shell
 jar xf target/app.jar META-INF/MANIFEST.MF
 cat META-INF/MANIFEST.MF
 ```
+
+On macOS, JavaFX GUIs are best run locally, not inside Docker.
